@@ -2,25 +2,15 @@
   "name": "online-shopping-cart",
   "version": "1.0.0",
   "main": "index.js",
- "scripts": {
-  "build": "tsc",
-  "start": "node dist/Server/server.js"
-},
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/Server/server.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@types/axios": "^0.9.36",
-    "@types/bcryptjs": "^2.4.6",
-    "@types/cors": "^2.8.17",
-    "@types/dotenv": "^6.1.1",
-    "@types/express": "^5.0.0",
-    "@types/express-validator": "^2.20.33",
-    "@types/gravatar": "^1.8.6",
-    "@types/jsonwebtoken": "^9.0.8",
-    "@types/mongoose": "^5.11.96",
-    "@types/stripe": "^8.0.416",
     "axios": "^1.7.9",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
@@ -33,7 +23,18 @@
     "stripe": "^17.7.0"
   },
   "devDependencies": {
-    "ts-node": "^10.9.2",
-    "typescript": "^5.8.3"
+    "@types/axios": "^0.14.0",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.17",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.21",
+    "@types/express-validator": "^3.0.0",
+    "@types/gravatar": "^1.8.3",
+    "@types/jsonwebtoken": "^9.0.8",
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^18.17.19",
+    "@types/stripe": "^8.0.416",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
   }
 }
