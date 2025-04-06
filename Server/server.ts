@@ -2,6 +2,8 @@ import express, { response } from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
+import path from 'path';
+
 import userRouter from '../Routers/userRouter';
 import productRouter from '../Routers/productRouter';
 import paymentsRouter from '../Routers/paymentsRouter';
@@ -13,7 +15,7 @@ app.use(express.json());
 
 app.use(cors());
 
-dotenv.config({path:'../.env'});
+dotenv.config({ path: path.resolve(__dirname, '../.env') });
 
 const port=process.env.PORT || 5000
 
