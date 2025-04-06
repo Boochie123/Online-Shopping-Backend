@@ -2,10 +2,10 @@ import express, { response } from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
-import userRouter from './Routers/userRouter';
-import productRouter from './Routers/productRouter';
-import paymentsRouter from './Routers/paymentsRouter';
-import orderRouter from './Routers/orderRouter';
+import userRouter from '../Routers/userRouter';
+import productRouter from '../Routers/productRouter';
+import paymentsRouter from '../Routers/paymentsRouter';
+import orderRouter from '../Routers/orderRouter';
 
 const app:express.Application=express();
 
@@ -13,7 +13,7 @@ app.use(express.json());
 
 app.use(cors());
 
-dotenv.config({path:'./.env'});
+dotenv.config({path:'../.env'});
 
 const port=process.env.PORT || 5000
 
